@@ -50,4 +50,7 @@
 /etc/media_codecs_google_audio.xml
 /etc/sap.conf
 /etc/media_codecs_performance.xml
+/usr/libexec/droid-hybris/system/etc/init/disabled_services.rc
+/usr/libexec/droid-hybris/system/etc/init/vndservicemanager.rc
+/usr/libexec/droid-hybris/system/etc/init/hwservicemanager.rc
 /var/lib/environment/compositor/droid-hal-device.conf
