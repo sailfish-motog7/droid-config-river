@@ -53,4 +53,7 @@
 /usr/libexec/droid-hybris/system/etc/init/disabled_services.rc
 /usr/libexec/droid-hybris/system/etc/init/vndservicemanager.rc
 /usr/libexec/droid-hybris/system/etc/init/hwservicemanager.rc
+/usr/libexec/droid-hybris/system/etc/ld.config.28.txt
+/lib/systemd/system/local-fs.target.wants/system-etc-ld.config.28.txt.mount
+/lib/systemd/system/system-etc-ld.config.28.txt.mount
 /var/lib/environment/compositor/droid-hal-device.conf
