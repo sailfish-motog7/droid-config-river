@@ -141,7 +141,7 @@ source ./os-release
 
 # Locate rootfs .tar.bz2 archive
 for filename in *.tar.bz2; do
-	GEN_IMG_BASE=$(basename $filename .tar.bz2) 
+	GEN_IMG_BASE=$(basename $filename .tar.bz2) # sfe-$DEVICE-3.2.0.12
 done
 if [ ! -e "$GEN_IMG_BASE.tar.bz2" ]; then
 	echo "[hybris-installer] No rootfs archive found, exiting..."
@@ -157,11 +157,11 @@ echo "[hybris-installer] Estimated rootfs size when installed: ${IMAGE_SIZE}M"
 
 # Output filenames
 DST_IMG=sfos-rootfs.tar.bz2
-DST_PKG=$ID-$VERSION_ID-$DATE-$DEVICE$EXTRA_NAME 
+DST_PKG=$ID-$VERSION_ID-$DATE-$DEVICE$EXTRA_NAME # sailfishos-3.2.0.12-20191101-$DEVICE
 
 # Clone hybris-installer if not preset (e.g. porters-ci build env)
 if [ ! -d ../hybris/hybris-installer/ ]; then
-	git clone --depth 1 https://github.com/sailfishos-oneplus6/hybris-installer ../hybris/hybris-installer > /dev/null
+	git clone --depth 1 https://github.com/sailfishos-oneplus5/hybris-installer ../hybris/hybris-installer > /dev/null
 fi
 
 # Copy rootfs & hybris-installer scripts into updater .zip tree
