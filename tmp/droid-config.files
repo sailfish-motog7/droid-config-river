@@ -50,7 +50,10 @@
 /var/lib/environment/nemo/60-multimedia.conf
 /var/lib/environment/nemo/99-hybris.conf
 /var/lib/environment/ofono/noplugin.conf
+/etc/ofono/ril_subscription.conf
+/lib/systemd/system/multi-user.target.wants/wlan-module-load.service
 /lib/systemd/system/system-etc-ld.config.28.txt.mount
+/lib/systemd/system/wlan-module-load.service
 /lib/systemd/system/local-fs.target.wants/system-etc-ld.config.28.txt.mount
 /usr/libexec/droid-hybris/system/etc/ld.config.28.txt
 /usr/libexec/droid-hybris/system/etc/init/disabled_services.rc

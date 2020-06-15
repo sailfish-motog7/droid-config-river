@@ -17,9 +17,10 @@
 # Other screen sizes and ratios will require more trial-and-error.
 %define pixel_ratio 1.0
 
+Provides: ofono-configs
+
 %include droid-configs-device/droid-configs.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
 # sign, otherwise they will remain defined! E.g.:
 #define some_macro "I'll not be defined because I don't have % in front"
-
