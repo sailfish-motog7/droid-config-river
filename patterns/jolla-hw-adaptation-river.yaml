@@ -23,16 +23,21 @@ Requires:
 # Sensors
 - hybris-libsensorfw-qt5
 
+# FP
+- droid-biometry-fp
+- droid-fake-crypt
+- sailfish-fpd-community
+
 # Vibra
 - ngfd-plugin-native-vibrator
-- qt5-feedback-haptics-native-vibrator
+- qt5-feedback-haptics-ffmemless
 
 # Needed for /dev/touchscreen symlink
 - qt5-plugin-generic-evdev
 
 - pulseaudio-modules-droid
-- pulseaudio-modules-droid-glue
 - pulseaudio-modules-droid-hidl
+- audiosystem-passthrough
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
@@ -53,6 +58,9 @@ Requires:
 # This is needed for notification LEDs
 - mce-plugin-libhybris
 
+# Flashlight
+- jolla-settings-system-flashlight
+
 # USB mode controller
 - usb-moded
 
@@ -60,7 +68,7 @@ Requires:
 - rfkill
 
 # enable device lock and allow to select untrusted software
-- jolla-devicelock-daemon-encsfa
+- sailfish-devicelock-fpd
 
 # Enable home encryption
 #- sailfish-device-encryption
@@ -79,13 +87,10 @@ Requires:
 # Telephony
 - ofono-ril-binder-plugin
 
-# Camera
-- audioflingerglue
+# Required for mobile data
+- dummy_netd
 
 # Bluetooth
 - bluebinder
-
-# GPS
-- geoclue-provider-hybris
 
 Summary: Jolla HW Adaptation river
