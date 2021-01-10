@@ -93,6 +93,9 @@ Requires:
 # Bluetooth
 - bluebinder
 
+# Camera resolutions
+- camera-settings-plugin
+
 # Suspend workaround for Wi-Fi on newer Qualcomm devices
 #- sailfish-connman-plugin-suspend
 
