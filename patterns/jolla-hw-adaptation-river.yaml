@@ -94,6 +94,6 @@ Requires:
 - bluebinder
 
 # Suspend workaround for Wi-Fi on newer Qualcomm devices
-- sailfish-connman-plugin-suspend
+#- sailfish-connman-plugin-suspend
 
 Summary: Jolla HW Adaptation river
