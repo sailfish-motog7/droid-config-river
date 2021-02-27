@@ -1,0 +1,15 @@
+[Unit]
+Description=Load aw869x module
+Conflicts=shutdown.target
+After=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/sbin/modprobe aw869x
+ExecStop=/sbin/modprobe -r aw869x
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
