@@ -96,7 +96,7 @@ Requires: camera-settings-plugin
 #Requires: sailfish-connman-plugin-suspend
 
 # Browser video acceleration
-Requires: gmp-droid
+#Requires: gmp-droid
 
 %description -n patterns-sailfish-device-adaptation-river
 Pattern with packages for river HW Adaptation
