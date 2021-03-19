@@ -50,6 +50,7 @@ Requires: gstreamer1.0-plugins-bad
 Requires: nemo-gstreamer1.0-interfaces
 # For devices with droidmedia and gst-droid built, see HADK pdf for more information
 Requires: gstreamer1.0-droid
+Requires: gstreamer1.0-libav
 
 # This is needed for notification LEDs
 Requires: mce-plugin-libhybris
@@ -73,8 +74,8 @@ Requires: sailfish-devicelock-fpd
 Requires: geoclue-provider-hybris
 
 # For FM radio on some QCOM devices
-#Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
-#Requires: jolla-mediaplayer-radio
+Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
+Requires: jolla-mediaplayer-radio
 
 # NFC for devices using Android 8 or newer as base
 Requires: nfcd-binder-plugin
@@ -92,11 +93,8 @@ Requires: bluebinder
 # Camera resolutions
 Requires: camera-settings-plugin
 
-# Suspend workaround for Wi-Fi on newer Qualcomm devices
-#Requires: sailfish-connman-plugin-suspend
-
-# Browser video acceleration
-Requires: gmp-droid
+# !BROKEN Browser video acceleration
+#Requires: gmp-droid
 
 %description -n patterns-sailfish-device-adaptation-river
 Pattern with packages for river HW Adaptation

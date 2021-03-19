@@ -6,22 +6,22 @@ Requires: patterns-sailfish-device-adaptation-river
 # For devices with cellular modem. Those without one, please comment out:
 Requires: patterns-sailfish-cellular-apps
 # Early stages of porting benefit from these:
-Requires: patterns-sailfish-rnd
+# Requires: patterns-sailfish-rnd
 # dev-tools pattern will be fixed in the next release
 # for now we'll use its 'exploded' version:
 #Requires: patterns-sailfish-dev-tools
 Recommends: jolla-developer-mode
-Requires: strace
-Requires: gdb
-Requires: gdb-gdbserver
-Requires: vim-enhanced
+#Requires: strace
+#Requires: gdb
+#Requires: gdb-gdbserver
+Recommends: vim-enhanced
 Requires: less
-Requires: valgrind
-Requires: lipstick-qt5-tools
-Requires: libhybris-tests
+#Requires: valgrind
+#Requires: lipstick-qt5-tools
+#Requires: libhybris-tests
 Requires: busybox-static
-Requires: openssh-server
-Requires: zypper
+Recommends: openssh-server
+Recommends: zypper
 Requires: sailfish-content-graphics-z%{icon_res}
 
 # For multi-SIM devices
@@ -37,9 +37,6 @@ Requires: patterns-sailfish-consumer-generic
 
 # For Mozilla location services (online)
 Requires: geoclue-provider-mlsdb
-
-# Sailfish OS CSD tool for hardware testing
-# needs some configuration to get all features working
 
 # Devices with 2G or more memory should also include this booster
 # to improve camera startup times and the like
