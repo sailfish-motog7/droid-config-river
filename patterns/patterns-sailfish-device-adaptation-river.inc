@@ -93,8 +93,8 @@ Requires: bluebinder
 # Camera resolutions
 Requires: camera-settings-plugin
 
-# !BROKEN Browser video acceleration
-#Requires: gmp-droid
+# Browser video acceleration
+Requires: gmp-droid
 
 %description -n patterns-sailfish-device-adaptation-river
 Pattern with packages for river HW Adaptation
